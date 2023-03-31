@@ -15,12 +15,6 @@ pipeline {
             }
         }
 
-        stage('Hello from stage 2') {
-            ENV_URL=pipeline.stage.com
-            steps {
-                echo 'Hello World'
-                echo 'ENV_URL is ${ENV_URL}'
-            }
-        }
+        
     }
 }
