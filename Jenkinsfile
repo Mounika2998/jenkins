@@ -16,9 +16,9 @@ pipeline {
     stages {
         stage('Hello from stage 1') {
             steps {
-                sh "Hello World"
+                sh "echo Hello World"
                 sh "cat /home/centos/file.txt"
-                sh "ENV_URL is ${ENV_URL}"
+                sh "echo ENV_URL is ${ENV_URL}"
             }
         }
 
